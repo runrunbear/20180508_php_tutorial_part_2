@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="./on.jpg" alt="" onclick="test();">
+</body>
+<script>
+	function test() {
+		//找到img
+		var img = document.getElementsByTagName('img')[0];
+		//console.log(img);
+		if(img.src.indexOf('on') > -1) {
+			img.src = "off.jpg";
+		} else {
+			img.src = "on.jpg";
+		}
+	}
+</script>
+</html>

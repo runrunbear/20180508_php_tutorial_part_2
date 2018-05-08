@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<input type="button" value="开始" onclick="act();">
+<img src="fc.jpg" alt="">
+</body>
+<script>
+var img = document.getElementsByTagName('img')[0];
+var num = 0;
+function act() {
+num = 5;
+} 
+function fc() {
+if(num != 0) {
+num = num + 5;
+img.style.transform = 'rotate('+ num +'deg)';
+}
+} 
+setInterval('fc()' , 100);
+</script>
+</html>

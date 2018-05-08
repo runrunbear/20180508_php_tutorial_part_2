@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	div {
+		width: 1000px;
+		height: 400px;
+	}
+
+	#big {
+		width: 400px;
+		height: 400px;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<img src="./t1.jpg" alt="" id="big">
+	</div>
+	<img src="./t1.jpg" alt="" onmouseover="change('t1');">
+	<img src="./t2.jpg" alt="" onmouseover="change('t2');">
+	<img src="./t3.jpg" alt="" onmouseover="change('t3');">
+</body>
+<script>
+	var img = document.getElementById('big');
+	function change(test) {
+		if(test == 't1') {
+			img.src = "t1.jpg";
+		} else if(test == 't2') {
+			img.src = "t2.jpg";
+		} else if (test == 't3') {
+			img.src = "t3.jpg";
+		}
+	}
+</script>
+</html>

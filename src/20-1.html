@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="fc.jpg" alt="">
+	<input type="button" value="action" onclick="act();">
+</body>
+<script>
+	var num = 0;
+	var img = document.getElementsByTagName('img')[0];
+	function change() {
+		if( num > 0) {
+			num = num + 5;
+			img.style.transform = "rotate(" + num + "deg)";
+		}
+	}
+
+	function act() {
+		num = 5;
+	}
+
+	setInterval('change()' , 100)
+</script>
+</html>

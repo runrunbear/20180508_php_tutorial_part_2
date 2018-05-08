@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	#t1 {
+		width: 300px;
+		height: 300px;
+		background:red;
+	}
+
+	#t2 {
+		width: 300px;
+		height: 300px;
+		background:blue;
+	}
+</style>
+</head>
+<body>
+	<div id="t1" onclick="change();"></div>
+</body>
+<script>
+	function change() {
+		var div = document.getElementById('t1');
+		//alert(div);
+		//console.log(div);
+		div.id = 't2';
+	}
+</script>
+</html>

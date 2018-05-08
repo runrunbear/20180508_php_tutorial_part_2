@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table border="1">
+		<tr onmouseover="change('t1');">
+			<td>test1</td>
+			<td>test2</td>
+			<td>test3</td>
+		</tr>
+		<tr onmouseover="change('t2');">
+			<td>test1</td>
+			<td>test2</td>
+			<td>test3</td>
+		</tr>
+		<tr onmouseover="change('t3');">
+			<td>test1</td>
+			<td>test2</td>
+			<td>test3</td>
+		</tr>
+	</table>
+</body>
+<script>
+	var tr = document.getElementsByTagName('tr');
+	function change(test) {
+		if(test == 't1') {
+			tr[0].style.background="red";
+			tr[1].style.background="white";
+			tr[2].style.background="white";
+		} else if(test == 't2') {
+			tr[0].style.background="white";
+			tr[1].style.background="blue";
+			tr[2].style.background="white";			
+		} else if(test == 't3') {
+			tr[0].style.background="white";
+			tr[1].style.background="white";
+			tr[2].style.background="pink";					
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" onmouseover="ov();" onmouseout="out();">
+	<input type="text" oninput="test();" value="...">
+</body>
+<script>
+	var	inp = document.getElementsByTagName('input');
+	function ov() {
+		inp[0].style.border = "1px solid red";
+	}
+
+	function out() {
+		inp[0].style.border = "1px solid blue";
+	}
+
+	function test() {
+		inp[1].style.border = "1px solid orange";
+	}
+</script>
+</html>

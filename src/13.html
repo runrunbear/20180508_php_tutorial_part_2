@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="bom.jpg" alt="">
+</body>
+<script>
+	function bom() {
+		var img = document.getElementsByTagName('img')[0];
+		img.src = "warn.jpg";
+	}
+
+	setTimeout('bom()' , 3000);
+</script>
+</html>

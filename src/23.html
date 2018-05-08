@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+</body>
+<script>
+var tit = document.getElementsByTagName('title')[0];
+function test() {
+tit.innerHTML = '【 新消息】 Document';
+setTimeout("tit.innerHTML='【 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;】 Document'" , 500);
+} 
+setInterval('test()' , 1000);
+</script>
+</html>

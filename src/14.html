@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" style="width:350px;height:60px;border:1px solid red;">
+</body>
+<script>
+	function clock() {
+		var date = new Date();
+		var inp = document.getElementsByTagName('input')[0];
+		var y = date.getFullYear();
+		    y =  y + '/' +  (date.getMonth()  + 1 )+ '/';
+		    y += date.getDate() + '/';
+		    y += date.getHours() + ':';
+		    y += date.getMinutes() + ':';
+		    y += date.getSeconds();
+		//console.log(y);
+		inp.value = y;
+	}
+	clock();
+
+	setInterval('clock()' , 1000)
+</script>
+</html>
